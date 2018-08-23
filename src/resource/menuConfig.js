@@ -38,7 +38,7 @@ const menuList = [
         key: '/admin/form',
         children: [{
             title: '登陆',
-            key: '/admin/login'
+            key: '/admin/form/login'
         }, {
             title: '注册',
             key: '/admin/form/reg'

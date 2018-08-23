@@ -7,6 +7,8 @@ import Admin from "./Admin";
 import Buttons from "./pages/ui/buttons";
 import NoMatch from "./pages/nomatch";
 import Modals from './pages/ui/modals';
+import LoginForm from "./pages/form/login/index";
+import RegisterFrom from "./pages/form/register/index";
 
 export default class IRouter extends React.Component{
 
@@ -22,9 +24,10 @@ export default class IRouter extends React.Component{
                                 <Switch>
                                     <Route path={'/admin/ui/buttons'} component={Buttons} />
                                     <Route path={'/admin/ui/modals'} component={Modals} />
+                                    <Route path={'/admin/form/login'} component={LoginForm}/>
+                                    <Route path={'/admin/form/reg'} component={RegisterFrom}/>
                                     <Route component={NoMatch}/>
                                 </Switch>
-
                             </Admin>
                     }/>
 
